@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-agregar',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class AgregarComponent {
+export class AgregarComponent implements OnInit {
+  constructor() { }
 
+  ngOnInit(): void {
+  }
 }

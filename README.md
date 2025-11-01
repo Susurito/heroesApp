@@ -1,27 +1,67 @@
-# HeroesApp
+HeroesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+Este proyecto fue generado con Angular CLI
+ versión 16.2.11, utilizando Node.js versión 18.13.0.
 
-## Development server
+Servidor de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecuta el comando:
 
-## Code scaffolding
+ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+para iniciar el servidor de desarrollo.
+Luego, abre tu navegador y entra a http://localhost:4200/
+.
+La aplicación se recargará automáticamente cada vez que realices cambios en los archivos fuente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Creación de componentes y otros elementos
 
-## Running unit tests
+Para generar un nuevo componente, usa:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng generate component nombre-del-componente
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+También puedes generar directivas, tuberías, servicios, clases, guards, interfaces, enums o módulos con:
 
-## Further help
+ng generate directive|pipe|service|class|guard|interface|enum|module
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Compilación del proyecto
+
+Ejecuta el comando:
+
+ng build
+
+
+para compilar el proyecto.
+Los archivos resultantes se almacenarán en el directorio dist/.
+
+Pruebas unitarias
+
+Ejecuta:
+
+ng test
+
+
+para realizar las pruebas unitarias mediante Karma
+.
+
+Pruebas de extremo a extremo (E2E)
+
+Ejecuta:
+
+ng e2e
+
+
+para realizar pruebas de extremo a extremo con la plataforma de tu elección.
+Para usar este comando, primero debes instalar un paquete que implemente las capacidades de prueba E2E.
+
+Ayuda adicional
+
+Para obtener más información sobre Angular CLI, ejecuta:
+
+ng help
+
+
+O consulta la documentación oficial de Angular CLI
+.

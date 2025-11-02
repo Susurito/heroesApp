@@ -1,27 +1,44 @@
 # HeroesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+Este proyecto fue generado con **Angular CLI versión 16.2.11**, utilizando **Node.js versión 18.13.0**.
 
-## Development server
+## Servidor de desarrollo
+Ejecuta el siguiente comando para iniciar el servidor de desarrollo:
+ng serve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para iniciar el servidor de desarrollo.
+Luego, abre tu navegador y entra a http://localhost:4200/
+La aplicación se recargará automáticamente cada vez que realices cambios en los archivos fuente.
 
-## Code scaffolding
+## Creación de componentes y otros elementos
+Para generar un nuevo componente, usa:
+ng generate component nombre-del-componente
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+También puedes generar directivas, tuberías, servicios, clases, guards, interfaces, enums o módulos con:
+ng generate directive|pipe|service|class|guard|interface|enum|module
 
-## Build
+## Compilación del proyecto
+Ejecuta el comando:
+ng build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+para compilar el proyecto.
+Los archivos resultantes se almacenarán en el directorio dist/.
 
-## Running unit tests
+## Pruebas unitarias
+Ejecuta:
+ng test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+para realizar las pruebas unitarias mediante Karma.
 
-## Running end-to-end tests
+## Pruebas de extremo a extremo (E2E)
+Ejecuta:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng e2e
+para realizar pruebas de extremo a extremo con la plataforma de tu elección.
+Para usar este comando, primero debes instalar un paquete que implemente las capacidades de prueba E2E.
 
-## Further help
+## Ayuda adicional
+Para obtener más información sobre Angular CLI, ejecuta:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng help
+

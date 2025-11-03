@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 const routes: Routes = [
   {
-    path: 'auth', loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule )
+    path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'heroes', loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule )
+    path: 'heroes', loadChildren: () => import('./heroes/heroes.module').then(m => m.HeroesModule),
+    canLoad: [AuthGuard],
+    canActivate: [AuthGuard]
   },
   {
     path: '404', component: ErrorPageComponent
@@ -20,7 +23,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot( routes )
+    RouterModule.forRoot(routes)
   ],
   exports: [
     RouterModule
